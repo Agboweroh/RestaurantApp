@@ -89,7 +89,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           height: Dimensions.height30,
         ),
         Container(
-          margin: EdgeInsets.only(left: Dimensions.width30),
+          margin: EdgeInsets.only(
+            left: Dimensions.width30,
+          ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -153,7 +155,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                             // Text Container
                             Expanded(
                               child: Container(
-                                height: 100,
+                                height: Dimensions.height20 * 5,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     topRight:
@@ -176,9 +178,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                           text: recommendedProduct
                                               .recommendedProductList[index]
                                               .name!),
-                                      SizedBox(
-                                        height: Dimensions.height10,
-                                      ),
+                                      // SizedBox(
+                                      //   height: Dimensions.height10 / 2,
+                                      // ),
                                       const SmallText(
                                           text: 'With Chinese characteristics'),
                                       SizedBox(
@@ -186,7 +188,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                                       ),
                                       Row(
                                         mainAxisAlignment:
-                                            MainAxisAlignment.spaceAround,
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           IconAndTextWidget(
                                             text: 'Normal',
@@ -296,9 +298,9 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           child: Container(
             height: Dimensions.pageViewTextContainer,
             margin: EdgeInsets.only(
-                left: Dimensions.width30,
-                right: Dimensions.width30,
-                bottom: Dimensions.height15),
+                left: Dimensions.width20,
+                right: Dimensions.width20,
+                bottom: Dimensions.height20),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(Dimensions.radius30),
               color: Colors.white,

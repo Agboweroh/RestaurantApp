@@ -13,6 +13,7 @@ class AppColumn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         BigText(
           text: text,
@@ -50,10 +51,10 @@ class AppColumn extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: Dimensions.height20,
+          height: Dimensions.height10,
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             IconAndTextWidget(
               text: 'Normal',

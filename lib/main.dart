@@ -1,5 +1,6 @@
 import 'package:duka/controllers/popular_product_controller.dart';
 import 'package:duka/controllers/recommended_product_controller.dart';
+import 'package:duka/pages/cart/cart_page.dart';
 import 'package:duka/routes/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

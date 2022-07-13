@@ -96,54 +96,10 @@ class CartPage extends StatelessWidget {
                                       Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          const BigText(
+                                        children: const [
+                                          BigText(
                                               text: '\$30.00',
                                               color: Colors.redAccent),
-                                          Container(
-                                            padding: EdgeInsets.only(
-                                                top: Dimensions.height10,
-                                                bottom: Dimensions.height10,
-                                                left: Dimensions.width10,
-                                                right: Dimensions.width10),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(
-                                                      Dimensions.radius20),
-                                              color: Colors.white,
-                                            ),
-                                            child: Row(
-                                              children: [
-                                                GestureDetector(
-                                                  onTap: () {
-                                                    // popularProduct.setQuantiy(false);
-                                                  },
-                                                  child: Icon(
-                                                    Icons.remove,
-                                                    color: AppColors.signColor,
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: Dimensions.width10 / 2,
-                                                ),
-                                                const BigText(
-                                                    text:
-                                                        '0'), // popularProduct.inCartItems.toString()),
-                                                SizedBox(
-                                                  width: Dimensions.width10 / 2,
-                                                ),
-                                                GestureDetector(
-                                                  onTap: () {
-                                                    //popularProduct.setQuantiy(true);
-                                                  },
-                                                  child: Icon(
-                                                    Icons.add,
-                                                    color: AppColors.signColor,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
                                         ],
                                       )
                                     ],

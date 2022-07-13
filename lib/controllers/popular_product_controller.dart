@@ -3,7 +3,6 @@ import 'package:duka/data/repository/popular_product_repo.dart';
 import 'package:duka/models/cart_model.dart';
 import 'package:duka/models/product_model.dart';
 import 'package:duka/utils/colors.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -25,11 +24,9 @@ class PopularProductController extends GetxController {
   Future<void> getPopularProductList() async {
     Response response = await popularProductRepo.getPopularProductList();
     if (response.statusCode == 200) {
-      debugPrint('got products');
       _popularProductList = [];
       _popularProductList.addAll(Product.fromJson(response.body).products);
       _isLoaded = true;
-      // print(_popularProductList);
       update();
     }
   }
