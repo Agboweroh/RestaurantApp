@@ -1,0 +1,5 @@
+Steps to run the app on web browser:
+Ensure you have flutter/dart installed on your local machine
+Run the following command to test the web version.
+#flutter run -d chrome --web-renderer html
+On your web Browser:  Right click and click on inspect, then test the app on iPhone12 pro or other devices available. 
